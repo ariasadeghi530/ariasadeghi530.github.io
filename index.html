@@ -1,13 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My First Deployed App</title>
+  <title>Aria Sadeghi</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-  <h1>Hello World!</h1>
-  <h2>Goodbye World!</h2>
+
+<body class="bg-light">
+
+  <!-- nav bar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand text-info" id="title" href="./index.html">Aria Sadeghi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!-- main page elements -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-7">
+        <h3 id="push-down">About Me</h3>
+        <img src="./images/ASHeadshot.png" class="imgclass" alt="aria-bio-img">
+        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+          vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec
+          lacinia congue felis in faucibus.</p>
+        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et
+          magnis
+          dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fugit nesciunt perferendis nam quaerat?
+          Officiis nostrum ut veniam saepe tempore perferendis commodi quo in totam sed, laboriosam impedit ab
+          excepturi?
+          Laudantium beatae accusantium facilis harum in neque repellat libero est porro quisquam hic, repellendus vero
+          quia corrupti distinctio voluptatibus error velit consequatur praesentium dolorum! Obcaecati nisi quidem rem
+          molestiae necessitatibus.
+          Cupiditate ab illo earum obcaecati expedita amet eligendi harum perferendis? Sit nulla consectetur id,
+          praesentium ex repudiandae explicabo minus necessitatibus quas qui nemo illum a consequatur, velit rem autem?
+          Sed.
+          Ipsa ex mollitia in illum, excepturi cumque a praesentium reiciendis aut possimus optio? Provident officia
+          obcaecati laboriosam accusantium vero, numquam dicta, similique minus eligendi aperiam excepturi distinctio,
+          ut quos unde!</p>
+      </div>
+      <div class="col-md-3 card-move">
+        <div class="card mt-5 mr-3 card-shadow">
+          <div class="card-body card">
+            <img class="img-photo-adjust photoSize" src="./images/eFlowSS.png" class="mr-3" alt="codingStockImg">
+            <div class="media-body">
+              <h5 class="card-title">eFlow</h5>
+              <p class="card-text">A mobile-responsive local marketplace where users can buy, sell, and trade with other
+                users. Full stack app utilizing MySQL, Express, React-views, and Node. </p>
+              <a href="https://frozen-atoll-04274.herokuapp.com/" target="_blank" class="stretched-link">Deployed
+                App</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <!-- spacer box -->
+      <div id="box"></div>
+
+    </div>
+  </div>
+  <!-- end main page elements -->
+
+  <!-- start footer -->
+  <footer class="footer bg-light">
+    <div class="container">
+      <span class="text-muted">&copy Aria Sadeghi 2020</span>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
