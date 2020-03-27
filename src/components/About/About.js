@@ -42,7 +42,7 @@ export default function Album() {
            </Button>
          </Grid>
          <Grid item>
-           <Button href="https://docs.google.com/document/d/1p_KiLvFHAaG-TBpaxJ6GWEqYH5HGaTStW9dN9KjurPg/edit?usp=sharing" target="_blank" variant="outlined" color="primary">
+           <Button href="https://drive.google.com/file/d/18y--fU6dOd83SYGQb4HdMkwiJWMlXXXo/view?usp=sharing" target="_blank" variant="outlined" color="primary">
              Resume
            </Button>
          </Grid>
