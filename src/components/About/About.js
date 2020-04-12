@@ -27,7 +27,7 @@ export default function Album() {
        Aria Sadeghi
      </Typography>
      <Typography variant="h5" align="center" color="textSecondary" paragraph>
-       I am a full stack developer, finding efficient and clean solutions to complex problems.
+       I am a full stack developer, finding clean and logical solutions to complex problems.
      </Typography>
      <div className={classes.heroButtons}>
        <Grid container spacing={2} justify="center">

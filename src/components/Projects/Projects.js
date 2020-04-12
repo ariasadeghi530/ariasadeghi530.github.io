@@ -36,7 +36,9 @@ const useStyles = makeStyles((theme) => ({
   },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
+    paddingBottom: '5%'
   },
+
   cardContent: {
     flexGrow: 1,
   },
@@ -46,9 +48,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const cards = [{name: 'eFlow', description: "A mobile-responsive, full stack application, utilizing MySQL, Express, React-views, and Node. A local marketplace for users to buy, sell, and trade items with other users. Hand built user authentication and private messaging, password reset utilizing node mailer package, and using UI kit styling library. Utilizes RESTful routes.", github: 'https://github.com/ariasadeghi530/eFlow-', deployed: 'https://frozen-atoll-04274.herokuapp.com/'},
- {name: 'Pin', description: "Project Idea Network, a platform for developers to share project ideas for their portfolios. Currently in development. April 2020", github: 'https://github.com/ariasadeghi530/pin', deployed: 'https://github.com/ariasadeghi530/pin'}, 
- {name: 'GitHoops', description: "A mobile-responsive web app with up-to-date NBA game, team, and player information, utilizing theSportsDB API, mySportsFeed API, ESPN API, and Google Maps API. Utilized HTML, CSS, JavaScript, and Materialize's styling library.", github: 'https://github.com/ariasadeghi530/gitHoops', deployed: 'https://ariasadeghi530.github.io/gitHoops/'}]
+const cards = [{name: 'eFlow', description: "A mobile-responsive, full stack application, utilizing MySQL, Express, React-views, and Node. A local marketplace for users to buy, sell, and trade items with other users. Hand built user authentication and private messaging, password reset utilizing node mailer package, and using UI kit styling library. Utilizes RESTful routes.", github: 'https://github.com/ariasadeghi530/eFlow-', deployed: 'https://frozen-atoll-04274.herokuapp.com/', image: './images/eFLowImg.png'},
+ {name: 'Pin', description: "Pin, or the Project Idea Network, a MERN stack application allowing developers to share project ideas to add to their portfolios. Fully mobile responsive and implementing MaterialUI library.", github: 'https://github.com/ariasadeghi530/pin', deployed: 'https://still-mesa-24441.herokuapp.com/', image: './images/pinImg.png'}, 
+ {name: 'GitHoops', description: "A mobile-responsive web app with up-to-date NBA game, team, and player information, utilizing theSportsDB API, mySportsFeed API, ESPN API, and Google Maps API. Utilized HTML, CSS, JavaScript, and Materialize's styling library.", github: 'https://github.com/ariasadeghi530/gitHoops', deployed: 'https://ariasadeghi530.github.io/gitHoops/', image: './images/gitHoopsImg.png'}]
 
 export default function Projects() {
   const classes = useStyles();
@@ -59,7 +61,7 @@ export default function Projects() {
       <Card className={classes.card}>
         <CardMedia
           className={classes.cardMedia}
-          image="https://source.unsplash.com/random"
+          image={card.image}
           title="Image title"
         />
         <CardContent className={classes.cardContent}>
