@@ -10,9 +10,20 @@ import Link from '@material-ui/core/Link';
 const useStyles = makeStyles((theme) => ({
 
   heroContent: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(8, 0, 6),
+    position: 'relative',
+    display: 'table',
+    
+    paddingLeft: 0,
+    paddingRight: 0,
+    width: '100%',
+    height: '50%',
+    paddingBottom: '10%',
+    paddingTop: '10%',
+    // marginBottom: 10,
+    overflowX: 'hidden',
+    backgroundSize: "cover"
   },
+ 
   heroButtons: {
     marginTop: theme.spacing(4),
   },
@@ -23,32 +34,36 @@ export default function Album() {
   return (
    <div className={classes.heroContent}>
    <Container maxWidth="sm">
-     <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+     <Typography component="h1" variant="h2" align="center"  gutterBottom>
        Aria Sadeghi
      </Typography>
      <Typography variant="h5" align="center" color="textSecondary" paragraph>
-       I am a full stack developer, finding clean and logical solutions to complex problems.
+       I'm a full stack developer, finding clean and logical solutions to complex problems.
      </Typography>
      <div className={classes.heroButtons}>
-       <Grid container spacing={2} justify="center">
+       <Grid container spacing={3} justify="center">
          <Grid item>
-           <Button href='https://github.com/ariasadeghi530' target="_blank" variant="outlined" color="primary">
+           <Button href='https://github.com/ariasadeghi530' target="_blank" variant="contained" color="inherit">
              Github
            </Button>
          </Grid>
          <Grid item>
-           <Button href='https://www.linkedin.com/in/ariasadeghi/' target="_blank"  variant="outlined" color="primary">
+           <Button href='https://www.linkedin.com/in/ariasadeghi/' target="_blank"  variant="contained" color="inherit">
              LinkedIn
            </Button>
+           
          </Grid>
          <Grid item>
-           <Button href="https://drive.google.com/file/d/18y--fU6dOd83SYGQb4HdMkwiJWMlXXXo/view?usp=sharing" target="_blank" variant="outlined" color="primary">
+           <Button href="https://drive.google.com/file/d/18y--fU6dOd83SYGQb4HdMkwiJWMlXXXo/view?usp=sharing" target="_blank" variant="contained" color="inherit">
              Resume
            </Button>
          </Grid>
+          
        </Grid>
+       
      </div>
    </Container>
+   
  </div>
     )
     

@@ -46,23 +46,32 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  projectHeader:{
+    marginTop: '5%',
+    marginBottom: '5%'
+  }
 }));
 
-const cards = [{name: 'eFlow', description: "A mobile-responsive, full stack application, utilizing MySQL, Express, React-views, and Node. A local marketplace for users to buy, sell, and trade items with other users. Hand built user authentication and private messaging, password reset utilizing node mailer package, and using UI kit styling library. Utilizes RESTful routes.", github: 'https://github.com/ariasadeghi530/eFlow-', deployed: 'https://frozen-atoll-04274.herokuapp.com/', image: './images/eFLowImg.png'},
+const cards = [{name: 'eFlow', description: "A mobile-responsive, full stack application, utilizing MySQL, Express, React-views, and Node. A local marketplace for users to buy, sell, and trade items with other users. Hand built user authentication and private messaging, password reset utilizing node mailer package, and using UI kit styling library. Utilizes RESTful routes.", github: 'https://github.com/ariasadeghi530/eFlow-', deployed: 'https://frozen-atoll-04274.herokuapp.com/', image: './images/eFlowImg.png'},
  {name: 'Pin', description: "Pin, or the Project Idea Network, a MERN stack application allowing developers to share project ideas to add to their portfolios. Fully mobile responsive and implementing MaterialUI library.", github: 'https://github.com/ariasadeghi530/pin', deployed: 'https://still-mesa-24441.herokuapp.com/', image: './images/pinImg.png'}, 
  {name: 'GitHoops', description: "A mobile-responsive web app with up-to-date NBA game, team, and player information, utilizing theSportsDB API, mySportsFeed API, ESPN API, and Google Maps API. Utilized HTML, CSS, JavaScript, and Materialize's styling library.", github: 'https://github.com/ariasadeghi530/gitHoops', deployed: 'https://ariasadeghi530.github.io/gitHoops/', image: './images/gitHoopsImg.png'}]
 
 export default function Projects() {
   const classes = useStyles();
   return(
+    <Container>
+      <Typography variant="h5" align="center" color="textSecondary" className={classes.projectHeader}>
+        My Work
+      </Typography>
   <Grid container spacing={4}>
+    
   {cards.map((card, index) => (
-    <Grid item key={index} xs={12} sm={6} md={4}>
+    <Grid item key={index} xs={12} sm={6} md={6}>
       <Card className={classes.card}>
         <CardMedia
           className={classes.cardMedia}
           image={card.image}
-          title="Image title"
+          title={card.name}
         />
         <CardContent className={classes.cardContent}>
           <Typography gutterBottom variant="h5" component="h2">
@@ -84,5 +93,6 @@ export default function Projects() {
     </Grid>
   ))}
 </Grid>
+</Container>
   )
 }
