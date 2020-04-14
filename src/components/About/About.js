@@ -4,8 +4,9 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
+import IconButton from '@material-ui/core/IconButton';
 
+// add logos as buttons for links and also add a paragraph about yourself to fill the space between buttons and work
 
 const useStyles = makeStyles((theme) => ({
 
@@ -17,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 0,
     width: '100%',
     height: '50%',
-    paddingBottom: '10%',
+    paddingBottom: '8%',
     paddingTop: '10%',
     // marginBottom: 10,
     overflowX: 'hidden',
@@ -27,6 +28,10 @@ const useStyles = makeStyles((theme) => ({
   heroButtons: {
     marginTop: theme.spacing(4),
   },
+  logo:{
+    width: "55px",
+    height: '55px'
+  }
 }));
 export default function Album() {
   const classes = useStyles();
@@ -38,25 +43,28 @@ export default function Album() {
        Aria Sadeghi
      </Typography>
      <Typography variant="h5" align="center" color="textSecondary" paragraph>
-       I'm a full stack developer, finding clean and logical solutions to complex problems.
+       I'm a full stack developer based in Irvine, CA.
+     </Typography>
+     <Typography variant="h6" align="center" color="textSecondary" paragraph>
+       I find clean and logical solutions to complex problems. Learn more about me and see some of the work I've done.
      </Typography>
      <div className={classes.heroButtons}>
        <Grid container spacing={3} justify="center">
          <Grid item>
-           <Button href='https://github.com/ariasadeghi530' target="_blank" variant="contained" color="inherit">
-             Github
-           </Button>
+           <IconButton href='https://github.com/ariasadeghi530' target="_blank" >
+             <img src='/images/product_5.png' alt="github-logo" className={classes.logo}/>
+           </IconButton>
          </Grid>
          <Grid item>
-           <Button href='https://www.linkedin.com/in/ariasadeghi/' target="_blank"  variant="contained" color="inherit">
-             LinkedIn
-           </Button>
+           <IconButton href='https://www.linkedin.com/in/ariasadeghi/' target="_blank"  >
+           <img src='/images/linkedIn.png' alt="linked-logo" className={classes.logo}/>
+           </IconButton>
            
          </Grid>
          <Grid item>
-           <Button href="https://drive.google.com/file/d/18y--fU6dOd83SYGQb4HdMkwiJWMlXXXo/view?usp=sharing" target="_blank" variant="contained" color="inherit">
-             Resume
-           </Button>
+           <IconButton href="https://drive.google.com/file/d/18y--fU6dOd83SYGQb4HdMkwiJWMlXXXo/view?usp=sharing" target="_blank" >
+             <img src="/images/resumeLogo.png" alt="resume-logo" className={classes.logo}/>
+           </IconButton>
          </Grid>
           
        </Grid>
