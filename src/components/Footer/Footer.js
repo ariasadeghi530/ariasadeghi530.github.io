@@ -31,7 +31,11 @@ export default function Footer() {
     <Link color="inherit" href="mailto:ariasadeghi@gmail.com"> 
       Contact Me
       </Link>
+      
     </Typography>
+    <Typography  align="center" color="textSecondary" paragraph>
+    I am actively seeking employment opportunities.
+     </Typography>
     <Copyright />
   </footer>
   )
