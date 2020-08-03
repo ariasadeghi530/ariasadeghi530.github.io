@@ -6,7 +6,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import IconButton from '@material-ui/core/IconButton';
 
-// add logos as buttons for links and also add a paragraph about yourself to fill the space between buttons and work
 
 const useStyles = makeStyles((theme) => ({
 
@@ -43,10 +42,10 @@ export default function Album() {
        Aria Sadeghi
      </Typography>
      <Typography variant="h5" align="center" color="textSecondary" paragraph>
-       I'm a full stack developer based in Irvine, CA.
+       I'm a full stack engineer based in Laguna Hills, CA.
      </Typography>
      <Typography variant="h6" align="center" color="textSecondary" paragraph>
-       I find clean and logical solutions to complex problems. Learn more about me and see some of the work I've done.
+       I find clean and logical solutions to complex problems. Learn more about me and see some of the work I've done below.
      </Typography>
      <div className={classes.heroButtons}>
        <Grid container spacing={3} justify="center">
