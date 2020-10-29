@@ -16,7 +16,6 @@ function Copyright() {
 }
 const useStyles = makeStyles((theme) => ({
   footer: {
-    backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
 }));
@@ -31,7 +30,11 @@ export default function Footer() {
     <Link color="inherit" href="mailto:ariasadeghi@gmail.com"> 
       Contact Me
       </Link>
+      
     </Typography>
+    <Typography  align="center" color="textSecondary" paragraph>
+    I am actively seeking employment opportunities.
+     </Typography>
     <Copyright />
   </footer>
   )
