@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
@@ -12,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   heroContent: {
     position: 'relative',
     display: 'table',
-    
+    backgroundColor: '#F7F7F7',
     paddingLeft: 0,
     paddingRight: 0,
     width: '100%',

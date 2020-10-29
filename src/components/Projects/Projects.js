@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
 
   cardContent: {
     flexGrow: 1,
+  
   },
   footer: {
     backgroundColor: theme.palette.background.paper,
@@ -44,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   projectHeader: {
     marginTop: '5%',
     marginBottom: '5%'
-  }
+  },
 }));
 
 const cards = [{ name: 'eFlow', description: "A mobile-responsive, full stack application, utilizing MySQL, Express, React-views, and Node. A local marketplace for users to buy, sell, and trade items with other users. Hand built user authentication and private messaging, password reset utilizing node mailer package, and using UI Kit styling library. Utilizes RESTful routes.", github: 'https://github.com/ariasadeghi530/eFlow-', deployed: 'https://frozen-atoll-04274.herokuapp.com/', image: './images/eFlowImg.png' },
@@ -69,10 +70,10 @@ export default function Projects() {
                 title={card.name}
               />
               <CardContent className={classes.cardContent}>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography gutterBottom variant="h5" component="h2"  >
                   {card.name}
                 </Typography>
-                <Typography>
+                <Typography color="textSecondary">
                   {card.description}
                 </Typography>
               </CardContent>
