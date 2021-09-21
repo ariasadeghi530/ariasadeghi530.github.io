@@ -41,7 +41,7 @@ export default function Album() {
        Aria Sadeghi
      </Typography>
      <Typography variant="h5" align="center" color="textSecondary" paragraph>
-       I'm a full stack engineer based in Laguna Hills, CA.
+       I'm a software engineer based in Laguna Hills, CA.
      </Typography>
      <Typography variant="h6" align="center" color="textSecondary" paragraph>
        I find clean and logical solutions to complex problems. Learn more about me and see some of the work I've done below.
