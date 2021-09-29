@@ -60,7 +60,7 @@ export default function Album() {
            
          </Grid>
          <Grid item>
-           <IconButton href="https://docs.google.com/document/d/1p_KiLvFHAaG-TBpaxJ6GWEqYH5HGaTStW9dN9KjurPg/edit?usp=sharing" target="_blank" >
+           <IconButton href="https://docs.google.com/document/d/1p_KiLvFHAaG-TBpaxJ6GWEqYH5HGaTStW9dN9KjurPg/view?usp=sharing" target="_blank" >
              <img src="/images/resumeLogo.png" alt="resume-logo" className={classes.logo}/>
            </IconButton>
          </Grid>
